@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator-tip.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>Calculator Tip</title>
+</head>
+<body>
+   <form name="form-calculator-tip">
+        <div class="result-field">
+          <div class="tip-amount">
+            <h4>Tip amount / person</h4>
+            <input type="text" name="tip-input" id="tip-amount-person" disabled>
+          </div>
+          <div class="tip-per-person">
+            <h4>Total / person</h4>
+            <input type="text" name="total-input" id="tip-total-person" disabled>
+          </div>
+        </div>
+        <div class="num-people-field">
+          <span class="input-icon">
+            <i class="fa-solid fa-user-large"></i>
+            <input type="text" id="number-of-people" name="numOfPeople" placeholder="Number of People">
+          </span>
+        </div>
+        <div class="button-percent-tip">
+            <div class="percent-tip-title">
+              <h5>Select tip %</h5>
+            </div>
+            <div class="tip-field">
+                <input type="button" onclick="tipBillFunction(0.05);" name="fivePrcnt-input" value="5%">
+                <input type="button" onclick="tipBillFunction(0.10);" name="tenPrcnt-input" value="10%">
+                <input type="button" onclick="tipBillFunction(0.15);" name="fifteenPrcnt-input" value="15%">
+                <input type="button" onclick="tipBillFunction(0.25);" name="twentyFivePrcnt-input" value="25%">
+                <input type="button" onclick="tipBillFunction(0.50);" name="fifyPrcnt-input" value="50%">
+                <input type="button" id="custom-button" class="custom-button-class" name="custom-input" value="Custom">
+            </div>
+        </div>
+        <div class="enter-bill-field">
+          <h4>Enter Bill</h4>
+          <input type="text" id="billInput" name="input-bill" placeholder="$$">
+          <input type="reset" value="reset" id="resetButton">
+        </div>
+    </form>
+    </div>
+
+    <script src="calculator-tip.js"></script>
+</body>
+</html>

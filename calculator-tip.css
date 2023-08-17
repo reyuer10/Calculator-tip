@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html, body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #B6EADA;
+}
+
+
+form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.enter-bill-field{
+    display: flex;
+    padding: 0.5rem;
+    color: #03001C;
+    align-items: center;
+}
+
+.enter-bill-field h4{
+    padding-right: 10px;
+}
+
+.enter-bill-field input[type="text"]{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bolder;
+    width: 190px;
+    padding-left: 7px;
+    line-height: 20px;
+    color: #03001C;
+    border-radius: 7px;
+    border: none;
+    outline: 1px solid gray;
+}
+
+.enter-bill-field input[type="text"]:focus-within{
+    outline: 3px solid #03001C;
+}
+
+.enter-bill-field input[type="reset"]{
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #0B2447;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.enter-bill-field input[type="reset"]:hover{
+    background-color: #214476;
+    transition: 300ms;
+}
+
+
+
+.percent-tip-title h5{
+    padding: 0 0 5px 20px;
+    
+}
+
+.tip-field{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+}
+
+.button-percent-tip{
+    background-color: #0B2447;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+   
+}
+
+.button-percent-tip input[type="button"]{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button-percent-tip input[type="button"]:hover{
+    background-color: #d2d2d2;
+}
+
+.num-people-field{
+    justify-content: center;
+    display: flex;
+}
+
+.num-people-field input:focus-within{
+    outline: 3px solid #0B2447;
+}
+
+.num-people-field:focus-within .fa-user-large{
+    color: #0B2447;
+    transition: 0.2s;
+}
+
+.num-people-field input{
+    width: 400px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 50px;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    outline: 1px solid gray;
+}
+
+.num-people-field .input-icon{
+    position: relative;
+}
+
+.fa-user-large{
+    position: absolute;
+    font-size: 20px;
+    bottom: 20px;
+    left: 25px;
+    color: gray;
+}
+
+.result-field{
+    margin-bottom: 20px;
+}
+
+.result-field input[type="text"]{
+    width: 400px;
+   border-radius: 7px;
+   font-size: 20px;
+   border: none;
+   outline: 1px solid gray;
+   padding: 5px;
+}
+
+.tip-amount{
+    margin-bottom: 5px;
+}
+
+.inpuTextButtonSection{
+    display: flex;
+}
+
+.customInputText{
+    width: 55px;
+    
+    border-radius: 7px 0 0 7px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.customButtonText{
+    font-family: 'Roboto Mono', monospace;
+    width: 50px;
+    border-radius: 0 7px 7px 0;
+    border: 3px solid #fff;
+    background-color: #0B2447;
+    color: #fff;
+    font-size: 20px;
+}
+
+.customButtonText:hover{
+    background-color: #214476;
+}
+
+
+
+
+
